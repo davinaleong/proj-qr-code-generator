@@ -111,6 +111,14 @@ body {
   padding-inline: var(--container-spacer);
 }
 
+.btn {
+  display: inline-flex;
+  border: none;
+  border-radius: var(--size-100);
+  justify-content: center;
+  align-items: center;
+}
+
 /** Content - Grid **/
 .content-grid {
   display: grid;
@@ -189,6 +197,14 @@ body {
 .form-group[data-error] {
   --clr-label: var(--clr-danger-400);
   --clr-input-border: var(--clr-danger-400);
+}
+
+.btn-form {
+  grid-column: 1 / span 2;
+  min-height: 2.5em;
+  color: var(--clr-primary-100);
+  background-color: var(--clr-primary-400);
+  font-weight: bold;
 }
 
 /** Content - Output **/
