@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>QR Code Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <script src="./scripts/main.js"></script>
+  </head>
+  <body>
+    <header class="bg-primary-400 py-400">
+      <div class="container">
+        <p class="text-primary-100 fw-bold fs-500">QR Code Generator</p>
+      </div>
+    </header>
+
+    <main class="bg-grey-100 text-grey-900">
+      <div class="container | py-300">
+        <div class="content-grid | mb-600">
+          <h1 class="content-header | fw-bold fs-800">QR Code Generator</h1>
+
+          <div
+            class="content-description | flow fs-500"
+            style="--flow-spacer: 0.5em"
+          >
+            <p>
+              QR Codes allow moblie users to access your website simply and
+              quickly.
+            </p>
+            <p>
+              Enter the URL and size below to generate a QR Code and download
+              the image.
+            </p>
+            <p>
+              Additional options are available for you to change the colour of
+              the QR Code.
+            </p>
+          </div>
+
+          <form class="content-form form-grid" data-form>
+            <div class="form-group">
+              <label for="url" class="form-label">URL</label>
+              <input type="text" name="url" id="url" class="form-input" />
+            </div>
+            <div class="form-group">
+              <label for="size" class="form-label">Size in Pixels</label>
+              <select name="size" id="size" class="form-input">
+                <option value="">Size in px</option>
+                <option value="150">150x150</option>
+                <option value="300">300x300</option>
+                <option value="600">600x600</option>
+                <option value="1000">1000x1000</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fg-color" class="form-label">Foreground Color</label>
+              <input
+                type="color"
+                name="fg-colour"
+                id="fg-color"
+                class="form-input"
+              />
+            </div>
+            <div class="form-group">
+              <label for="bg-color" class="form-label">Background Color</label>
+              <input
+                type="color"
+                name="bg-color"
+                id="bg-color"
+                placeholder="Background Colour"
+                class="form-input"
+              />
+            </div>
+          </form>
+
+          <img src="./images/qr-code.svg" class="content-image" />
+        </div>
+        <div class="text-center text-danger-400" data-output></div>
+      </div>
+    </main>
+  </body>
+</html>
