@@ -169,6 +169,7 @@ body {
 }
 
 .content-image {
+  display: none;
   grid-area: content-image;
 }
 
@@ -182,6 +183,10 @@ body {
       "content-description content-image"
       "content-form content-image";
     gap: var(--size-500);
+  }
+
+  .content-image {
+    display: block;
   }
 }
 
