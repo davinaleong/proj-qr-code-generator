@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : ""
+        j.async = true
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, "script", "dataLayer", "GTM-WHS297N")
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="content-description" content="QR Code Generator" />
+    <meta
+      name="keywords"
+      content="qr code generator,qr,qr code,qrcode,generator"
+    />
+    <meta name="author" content="Davina Leong" />
 
     <title>QR Code Generator</title>
 
@@ -33,6 +54,17 @@
     <script defer src="./scripts/main.js"></script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WHS297N"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header class="primary-header | bg-primary-400 py-400">
       <div class="container header-grid">
         <p class="text-primary-100 fw-bold fs-500">
@@ -107,7 +139,9 @@
                 class="form-input"
               />
             </div>
-            <button class="btn btn-form" type="submit">Submit</button>
+            <button id="formButton" class="btn btn-form" type="submit">
+              Submit
+            </button>
           </form>
 
           <img src="./images/qr-code.svg" alt="QR Icon" class="content-image" />
