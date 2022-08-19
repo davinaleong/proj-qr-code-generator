@@ -129,6 +129,10 @@ a {
   text-decoration: none;
 }
 
+a:where(:hover, :focus, :focus-visible) {
+  color: inherit;
+}
+
 .btn {
   --btn-border-radius: var(--size-100);
   --btn-padding: var(--size-200);
@@ -166,14 +170,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.header-link {
-  color: var(--clr-grey-100);
-}
-
-.header-link:where(:hover, :focus, :focus-visible) {
-  color: var(--clr-accent-300);
 }
 
 /** Content - Grid **/
