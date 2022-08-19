@@ -214,7 +214,7 @@ body {
   background-color: var(--clr-primary-100);
 }
 
-.output-image {
+[data-output] > * {
   margin-inline: auto;
 }
 
