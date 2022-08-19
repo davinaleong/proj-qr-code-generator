@@ -15,17 +15,6 @@ formEl.addEventListener(`submit`, (event) => {
   const fgColor = formEl.elements[`fg-color`].value
   const bgColor = formEl.elements[`bg-color`].value
 
-  console.log(
-    `url: `,
-    url,
-    `size: `,
-    size,
-    `fgColor: `,
-    fgColor,
-    `bgColor: `,
-    bgColor
-  )
-
   let errors = ``
 
   if (!url) {
