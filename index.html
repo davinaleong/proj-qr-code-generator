@@ -24,7 +24,13 @@
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/main.css" />
 
-    <script src="./scripts/main.js"></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/6c0a4e7a8f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./scripts/qrcode.min.js"></script>
+    <script defer src="./scripts/main.js"></script>
   </head>
   <body>
     <header class="bg-primary-400 py-400">
@@ -65,7 +71,7 @@
               <label for="size" class="form-label">Size in Pixels</label>
               <select name="size" id="size" class="form-input">
                 <option value="">Size in px</option>
-                <option value="150">150x150</option>
+                <option value="150" selected>150x150</option>
                 <option value="300">300x300</option>
                 <option value="600">600x600</option>
                 <option value="1000">1000x1000</option>
@@ -77,6 +83,7 @@
                 type="color"
                 name="fg-colour"
                 id="fg-color"
+                value="#000000"
                 class="form-input"
               />
             </div>
@@ -86,6 +93,7 @@
                 type="color"
                 name="bg-color"
                 id="bg-color"
+                value="#ffffff"
                 placeholder="Background Colour"
                 class="form-input"
               />
@@ -99,7 +107,7 @@
         <div class="divider | mb-500"></div>
 
         <h2 class="fw-bold fs-500">Output</h2>
-        <div class="mb-500" data-output></div>
+        <div class="mt-300 mb-500 text-center" data-output></div>
       </div>
     </main>
   </body>

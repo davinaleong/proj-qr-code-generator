@@ -184,7 +184,7 @@ body {
   display: block;
   width: 100%;
   min-height: 2.5em;
-  padding: var(--size-100);
+  padding: var(--size-200);
   border: thin solid var(--clr-input-border);
   background-color: var(--clr-input-bg);
   border-radius: var(--size-100);
