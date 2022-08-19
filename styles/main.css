@@ -26,7 +26,8 @@
   --clr-primary-400: hsl(213, 68%, 69%);
 
   --clr-accent-100: hsl(193, 53%, 95%);
-  --clr-accent-300: hsl(193, 53%, 88%);
+  --clr-accent-200: hsl(193, 53%, 90%);
+  --clr-accent-300: hsl(193, 53%, 85%);
   --clr-accent-400: hsl(193, 53%, 78%);
 
   --clr-danger-400: hsl(4, 90%, 58%);
@@ -74,6 +75,7 @@
   --size-1000: 6rem;
   --size-1100: 7rem;
 
+  --header-height: 3.75rem;
   --container-width: 75rem;
   --container-spacer: var(--size-400);
 
@@ -94,6 +96,10 @@ body {
   font-weight: var(--fw-regular);
   display: grid;
   grid-template-rows: max-content auto;
+}
+
+main {
+  margin-top: var(--header-height);
 }
 
 .swatches {
@@ -119,6 +125,10 @@ body {
   padding-inline: var(--container-spacer);
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   --btn-border-radius: var(--size-100);
   --btn-padding: var(--size-200);
@@ -142,6 +152,28 @@ body {
   color: var(--btn-clr-hover);
   background-color: var(--btn-clr-bg-hover);
   border: thin solid var(--btn-clr-bg-hover);
+}
+
+/** Content - Header **/
+.primary-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-link {
+  color: var(--clr-accent-200);
+}
+
+.header-link:where(:hover, :focus, :focus-visible) {
+  color: var(--clr-accent-300);
 }
 
 /** Content - Grid **/
