@@ -163,8 +163,16 @@ body {
 /** Content - Form **/
 .form-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, max-content);
   gap: var(--size-400);
+}
+
+@media (min-width: 48em) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, max-content);
+  }
 }
 
 .form-group {
@@ -200,11 +208,16 @@ body {
 }
 
 .btn-form {
-  grid-column: 1 / span 2;
   min-height: 2.5em;
   color: var(--clr-primary-100);
   background-color: var(--clr-primary-400);
   font-weight: bold;
+}
+
+@media (min-width: 48em) {
+  .btn-form {
+    grid-column: 1 / span 2;
+  }
 }
 
 /** Content - Output **/
@@ -1527,7 +1540,7 @@ body {
   text-align: right;
 }
 
-@media (min-width: 62em) {
+@media (min-width: 48em) {
   .text-md-left {
     text-align: left;
   }
@@ -1547,7 +1560,7 @@ body {
   display: none;
 }
 
-@media (min-width: 62em) {
+@media (min-width: 48em) {
   .display-mobile {
     display: none;
   }
@@ -1599,6 +1612,9 @@ body {
 }
 .lh-200 {
   line-height: 0.8em;
+}
+.lh-300 {
+  line-height: 1em;
 }
 
 /** Utility - Border Radius **/

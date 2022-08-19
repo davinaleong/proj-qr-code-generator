@@ -40,9 +40,11 @@
     </header>
 
     <main class="bg-grey-100 text-grey-900">
-      <div class="container | py-300">
-        <div class="content-grid | mb-500">
-          <h1 class="content-header | fw-bold fs-800">QR Code Generator</h1>
+      <div class="container | py-500">
+        <div class="content-grid | text-center text-md-left mb-500">
+          <h1 class="content-header | fw-bold fs-800 lh-300">
+            QR Code Generator
+          </h1>
 
           <div
             class="content-description | flow fs-500"
@@ -62,7 +64,7 @@
             </p>
           </div>
 
-          <form class="content-form form-grid" data-form>
+          <form class="content-form form-grid text-left" data-form>
             <div class="form-group">
               <label for="url" class="form-label">URL</label>
               <input type="text" name="url" id="url" class="form-input" />
@@ -107,7 +109,7 @@
         <div class="divider | mb-500"></div>
 
         <h2 class="fw-bold fs-500">Output</h2>
-        <div class="mt-300 mb-500 text-center" data-output></div>
+        <div id="output" class="mt-300 mb-500 text-center" data-output></div>
       </div>
     </main>
   </body>
