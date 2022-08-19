@@ -169,7 +169,7 @@ a {
 }
 
 .header-link {
-  color: var(--clr-accent-200);
+  color: var(--clr-grey-100);
 }
 
 .header-link:where(:hover, :focus, :focus-visible) {
